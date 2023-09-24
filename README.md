@@ -32,9 +32,3 @@ Repositório para armazenar anotações e links de fontes para estudo.
 - **git log**: Exibe todos os commits realizados.
 - **echo arquivo-desejado/ > .gitignore**: Insere o arquivo desejado dentro do gitignore para que suas alterações não sejam salvas durante o commit.
 - **echo > .gitignore**: Limpa a lista de arquivos ignorados.
-
-
-**ISSO É APENAS UM TESTE**
-**ISSO É APENAS UM TESTE novamente**
-**ISSO É NOVAMENTE UM TESTE**
-
