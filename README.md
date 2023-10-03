@@ -65,8 +65,16 @@
     
 - **Aula 04** Enviando a baixando alterações:
 
-    **1.**
+    **1.** Abra o VSCode
 
+    **2.** Vá na abba de Source Control
+
+    **3.** Clique em "Commit & Push", caso deseje comentar, apenas insira um comentário na caixa de mensagens.
+
+    **4.** Para atualizar o repositório local com as alterações feitas no repositório remoto é só utilizar o comando:
+
+        git pull
+    
 
 ## 📋 Comandos Úteis
 - **cat**: Exibe o conteúdo de configuração de um arquivo.
