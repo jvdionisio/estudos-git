@@ -70,11 +70,37 @@
     **2.** Vá na abba de Source Control
 
     **3.** Clique em "Commit & Push", caso deseje comentar, apenas insira um comentário na caixa de mensagens.
+        
+        Para realizar alterações dentro do terminal basta utilizar 'git push' ou 'git push origin nome da branch desejada'
 
     **4.** Para atualizar o repositório local com as alterações feitas no repositório remoto é só utilizar o comando:
 
         git pull
+
+- **Aula 05** Trabalhando com branches:
     
+    **1.** Mudando de uma branch atual para nova dentro da mesma branch (criando uma branch dentro da outra)
+
+        git checkout -b nome da branch desejada
+        git checkout nome da branch principal - 'para retornar a branch original'
+
+    **2.** Mesclando as branchs
+        
+        git merge nome da branch para mesclar
+
+   **Aula 06** Trabalhando com branches:
+
+    **1.** Buscando informações do repositório remoto, mas sem alterar o repositorio local
+
+        git fetch nome do repositorio e branch
+   
+    **2.** Baixando arquivos da branch remota sem mesclar com a local.
+    
+        git merge origin/main
+
+    **3.** Clonando um repositório com várias branchs, caso não ocorra a identificação da branch o comando irá clonar apenas a principal
+        
+        git clone URL repositorio --branch desejada --single-branch
 
 ## 📋 Comandos Úteis
 - **cat**: Exibe o conteúdo de configuração de um arquivo.
@@ -89,3 +115,9 @@
 - **echo arquivo-desejado/ > .gitignore**: Insere o arquivo desejado dentro do gitignore para que suas alterações não sejam salvas durante o commit.
 - **echo > .gitignore**: Limpa a lista de arquivos ignorados.
 - **git reflog**: mostra um histórico mais detalhado dos commits realizados
+- **echo '#nome do arquivo' > nome do arquivo**: cria um novo commit dentro do arquivo
+- **git branch -v**: lista o último commit de cada branch
+- **git branch -d nome da branch**: deleta a branch desejada
+- **git branch**: retorna todas as branchs do repositório
+- **git fetch**: busca valores do repositório remoto, mas não os mistura com os valores do repositório local.
+- **git diff main origin/main**: lista as diferenças entre os arquivos do repositorio local e do repositório remoto
